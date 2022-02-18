@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&family=Space+Mono&display=swap');
+/* 
+font-family: 'Exo', sans-serif;
+font-family: 'Space Mono', monospace; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    background-color: rgb(209, 190, 214);
+
+}
+
+.flex-container{
+    margin: auto;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+ 
+ 
+}
+p{
+    color: whitesmoke;
+}
+.big-text{
+  
+    font-family: 'Exo', sans-serif;
+    font-size: 20rem;
+    width: 100%;
+    
+}
+.one{
+    background-color:#A82FC6 ;
+}
+.two{
+    background-color: #23143E ;
+}
+.three{
+    background-color: #116D7E ;
+}
+.four{
+    background-color: #2B830B;
+}
+.typed-out{
+    overflow: hidden;
+    border-right: .15em solid orange;
+    width: 0;
+    animation: typing 2s forwards;
+}
+.container{
+
+    display: inline-block;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
