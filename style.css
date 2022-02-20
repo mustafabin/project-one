@@ -6,44 +6,54 @@ font-family: 'Space Mono', monospace; */
 *{
     margin: 0;
     padding: 0;
+    color: whitesmoke;
+
 }
 
 body { 
-    background-color: rgb(209, 190, 214);
+    background-color: rgba(35, 20, 62, 1);
 
 }
 
 .flex-container{
-    margin: auto;
+
     display: flex;
     width: 100vw;
     height: 100vh;
     justify-content: center;
     flex-direction: column;
- 
- 
+    background-color: rgba(168, 47, 198, 1);
+
 }
-p{
-    color: whitesmoke;
-}
+
 .big-text{
-  
     font-family: 'Exo', sans-serif;
-    font-size: 20rem;
+    font-size: 15vw;
     width: 100%;
     
 }
 .one{
-    background-color:#A82FC6 ;
+    background-color:rgba(168, 47, 198, 1) ;
 }
 .two{
-    background-color: #23143E ;
+    background-color: rgba(35, 20, 62, 1) ;
+    ;
 }
 .three{
-    background-color: #116D7E ;
+    background-color: rgba(17, 109, 126, 1) ;
 }
 .four{
-    background-color: #2B830B;
+    background-color: rgba(43, 131, 11, 1) ;
+    ;
+}
+
+.container{
+
+    display: inline-block;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 80% }
 }
 .typed-out{
     overflow: hidden;
@@ -51,11 +61,71 @@ p{
     width: 0;
     animation: typing 2s forwards;
 }
-.container{
+/* this is where my timline css is  */
+.timeline-header{
+    text-align: center;
+    padding: 30px;
+    font-family: 'Exo', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 5px;
 
-    display: inline-block;
 }
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
+
+.timeline-container{
+    padding: 35px;
+}
+
+.timeline{
+    background: rgba(35, 20, 62, 1);
+    width: 100%;
+    height: 400vh; /* this value is depenedent to the amt of timeline items*/
+    display: grid;
+    grid-template-columns: 5px 1fr; /* two equal width columns and one with 3px  */
+    grid-template-rows: auto;
+    font-family:  'Space Mono', monospace;
+    color: whitesmoke;
+
+}
+.timeline-middle{
+
+    background:rgba(43, 131, 11, 1) ;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.timeline-marker{
+    width: 55px;
+    height: 55px;
+    border-radius: 45px;
+    background: rgb(89, 210, 44);
+    transform: translateX(-50%) translateY(-35%);
+
+}
+.timeline-component{
+    width: fit-content;
+    height: fit-content;
+    background: rgb(50, 29, 90);
+    border: 3px solid rgb(50, 29, 90);
+    border-radius: 35px;
+    padding: 15px;
+    margin: 55px;
+}
+
+.timeline-image{
+    width: 30vw;
+    height: 35vw;
+    padding: 20px;
+    object-fit: cover;
+    
+    
+
+}
+img.timeline-image{
+    border-radius: 30px;
+}
+.timeline-day{
+    font-size: 2rem;
+    font-family: 'Exo', sans-serif;
+}
+
+/* end of my timeline css */
