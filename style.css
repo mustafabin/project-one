@@ -25,18 +25,19 @@ body {
     display: flex;
     width: 100vw;
     height: 100vh;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(168, 47, 198, 1);
     border-bottom: 10px dashed rgba(35, 20, 62, 1) ;
+    
 
 
 }
 
 .big-text{
     font-family: 'Exo', sans-serif;
-    font-size: 15vw;
-    width: 100%;
+    font-size: 4rem;
     
 }
 .one{
@@ -51,22 +52,36 @@ body {
 }
 .four{
     background-color: rgba(43, 131, 11, 1) ;
-    ;
+}
+.landing-selfie{
+    border: 2px solid rgb(200, 125, 210);
+
+    width: 13rem;
+    height: 13rem;
+    object-fit: cover;
+    border-radius: 100%;
+
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
 }
 
 .container{
-
+    width: 15rem;
+    padding: 5rem;
     display: inline-block;
 }
 @keyframes typing {
     from { width: 0 }
-    to { width: 80% }
+    to { width: 100% }
 }
 .typed-out{
     overflow: hidden;
     border-right: .15em solid orange;
     width: 0;
-    animation: typing 2s forwards;
+    animation: typing 1s steps(15, end) forwards;
 }
 /* this is where my timline css is  */
 .header-text{
@@ -148,12 +163,16 @@ img.timeline-image, img.hobby-image, img.hobby-image-2{
     display: flex;
     flex-flow: column wrap;
     background-color: rgb(24, 125, 143);
-    border: 2px solid rgb(31, 155, 176);
+    border: 2px solid rgb(25, 135, 155);
     border-radius: 25px;
     width: fit-content;
     height: fit-content;
     margin: 15px;
     padding: 20px;
+    font-family: 'Exo', sans-serif;
+    letter-spacing: 0.1rem;
+
+
     
 }
 .hobby-image{
@@ -176,8 +195,11 @@ img.timeline-image, img.hobby-image, img.hobby-image-2{
 }
 .hobby-image-panel{
     display: flex;
+    justify-content: center;
+    align-items: space-around;
 }
 .hobby-image-3{
+
     width: 12rem;
     height: 25rem;
     object-fit: cover;
