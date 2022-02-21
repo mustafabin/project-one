@@ -38,6 +38,7 @@ body {
 .big-text{
     font-family: 'Exo', sans-serif;
     font-size: 4rem;
+    letter-spacing: 0.3rem;
     
 }
 .one{
@@ -77,11 +78,17 @@ body {
     from { width: 0 }
     to { width: 100% }
 }
+
+@keyframes blink {
+    from { border-color: transparent }
+    to { border-color: orange; }
+}
 .typed-out{
     overflow: hidden;
     border-right: .15em solid orange;
     width: 0;
-    animation: typing 1s steps(15, end) forwards;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: blink 0.8s infinite, typing 1s 1.3s steps(15, end) forwards;
 }
 /* this is where my timline css is  */
 .header-text{
