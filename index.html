@@ -10,8 +10,8 @@
     <body>
 
 
-        <div class="flex-container">
-            <div class="container">
+        <div  id="landing-anchor" class="flex-container">
+            <div  class="container">
                 <div class="big-text typed-out">
                     <p>Hello</p>
                 </div>
@@ -20,13 +20,19 @@
                 <img class="landing-selfie" src="media/20220218_153755.jpg" alt="">
             </div>
         </div>
-
-        <div class="header-text">
+        <div class="navbar sticky">
+                <!-- ADD SMOOTH SCROLLING -->
+                <a href="#landing-anchor">Home</a>
+                <a href="#timeline-anchor">Timeline</a>
+                <a href="#hobby-anchor">Hobbies</a>
+        </div>
+        <div id="timeline-anchor" class="header-text">
+            <br>
             <p>My SEI journey </p>
         </div>
         <div class="timeline-container">
 
-            <div class="timeline">
+            <div  class="timeline">
                 
                 <div class="timeline-middle">
                     <div class="timeline-marker"></div>
@@ -101,7 +107,9 @@
                 
             </div>
         </div>
-        <div class="block-divider"></div>
+        <br id="hobby-anchor" >
+
+        <div  class="block-divider"></div>
         <h1 class="header-text three">Hobbies </h1>
         <div class="hobby-container">
             <div class="hobby-item">

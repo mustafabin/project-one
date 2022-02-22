@@ -29,7 +29,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgba(168, 47, 198, 1);
-    border-bottom: 10px dashed rgba(35, 20, 62, 1) ;
+    border-bottom: 10px dashed rgb(22, 15, 36);
     
 
 
@@ -126,14 +126,15 @@ body {
     height: 55px;
     border-radius: 45px;
     background: rgb(89, 210, 44);
-    transform: translateX(-50%) translateY(-35%);
+    transform: translateX(-50%) translateY(-35%) ;
+
 
 }
 .timeline-component{
     width: fit-content;
     height: fit-content;
     background: rgb(50, 29, 90);
-    border: 3px solid rgb(50, 29, 90);
+    border: 3px solid rgb(66, 41, 112);
     border-radius: 35px;
     padding: 15px;
     margin: 55px;
@@ -216,5 +217,30 @@ img.timeline-image, img.hobby-image, img.hobby-image-2, img.timeline-image-b{
     object-fit: cover;
     
     
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: rgb(22, 15, 36);
+
+    
+}
+.navbar a{
+    font-family: 'Exo', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 5px;
+    padding: 15px;
+    text-decoration: none;
+}
+.sticky{
+    z-index:1;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+a:hover{
+    color: red;
 
 }
