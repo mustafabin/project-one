@@ -261,5 +261,7 @@ a:hover{
     .typed-out{
         padding-right: 8px;
     }
-
+    .flex-container{
+        padding-bottom: 10vw;
+    }
 }  
