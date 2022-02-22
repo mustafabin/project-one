@@ -76,7 +76,7 @@ body {
 }
 @keyframes typing {
     from { width: 0 }
-    to { width: 100% }
+    to { width: 80% }
 }
 
 @keyframes blink {
@@ -140,17 +140,21 @@ body {
 }
 
 .timeline-image{
-    width: 30vw;
-    height: 35vw;
+    width: 32vw;
+    height: 34vw;
     padding: 20px;
     object-fit: cover;
-    
-    
-
 }
-img.timeline-image, img.hobby-image, img.hobby-image-2{
+.timeline-image-b{
+    width: 43vw;
+    height: 46vw;
+    padding: 20px;
+    object-fit: cover;
+}
+img.timeline-image, img.hobby-image, img.hobby-image-2, img.timeline-image-b{
     border-radius: 30px;
 }
+
 .timeline-day{
     font-size: 2rem;
     font-family: 'Exo', sans-serif;
